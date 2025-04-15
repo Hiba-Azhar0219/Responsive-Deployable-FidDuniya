@@ -3,7 +3,7 @@ import Script from 'next/script'
 import Image from 'next/image'
 const HeroSection = () => {
   return (
-    <div className='hero rounded-2xl container flex justify-between min-h-[30vh] mx-5 my-5 bg-zinc-300'>
+    <div className='hero rounded-2xl container flex justify-between min-h-[30vh] mx-5 my-5 px-5 bg-white/40'>
       <div className='flex flex-col w-60 gap-2 text-green-800 justify-center items-center px-5'>
         <h1 id='day' className='text-4xl '>
           <Script>{`
@@ -42,7 +42,7 @@ time.innerHTML = timestamp;
       </div>
 
       {/* logo image */}
-      <Image src='/logo.png' alt='logo' height={100} width={200}></Image>
+      <Image src='/logo.png' alt='logo' height={100} width={300}></Image>
     </div>
   )
 }
