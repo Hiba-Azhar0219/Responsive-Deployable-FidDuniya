@@ -4,9 +4,18 @@ import React from 'react'
 
 const Navbar = () => {
   return (
-    <div className='flex justify-between h-16 bg-linear-to-r from-cyan-800 to-blue-900 px-10 py-5 text-white'>
-      <div className='flex'>
-        <Image src='/logo.png' width={50} height={50} alt='logo'></Image>
+    <div
+      className='flex justify-between items-center overflow: hidden;
+ h-16 bg-linear-to-r from-green-900 to-green-700 px-10 py-4 text-white drop-shadow-md'
+    >
+      <div className='flex gap-2 justify-center items-center '>
+        <Image
+          className='py-0 '
+          src='/fiddunya.png'
+          width={50}
+          height={120}
+          alt='logo'
+        ></Image>
         <h1 className='text-2xl'>Fid-dunya Wal-Akhirah</h1>
       </div>
 
@@ -14,11 +23,15 @@ const Navbar = () => {
         <Link href='/'>
           <li>Home</li>
         </Link>
-        <Link href='/Duas'>
-          <li>Duas</li>
+
+        <Link href='/About'>
+          <li>About</li>
         </Link>
-        <Link href='/Quran'>
-          <li>Quran</li>
+        <Link href='/Services'>
+          <li>Services</li>
+        </Link>
+        <Link href='/Contact'>
+          <li>Contact</li>
         </Link>
       </ul>
     </div>

@@ -1,0 +1,11 @@
+Image {
+  position: relative;
+  overflow: hidden;
+}
+.title-statement {
+  position: absolute;
+  top: 50%;
+}
+.times {
+  position: absolute;
+}

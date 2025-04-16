@@ -1,11 +1,33 @@
 import React from 'react'
 import Script from 'next/script'
 import Image from 'next/image'
+import './HeroSection.css'
 const HeroSection = () => {
   return (
-    <div className='hero rounded-2xl container flex justify-between min-h-[30vh] mx-5 my-5 px-5 bg-white/40'>
-      <div className='flex flex-col w-60 gap-2 text-green-800 justify-center items-center px-5'>
-        <h1 id='day' className='text-4xl '>
+    <div
+      className='hero overflow-x-hidden;
+ flex max-w-[100vw] min-w-[100vw]'
+    >
+      <Image
+        src='/heroSectionImage.jpg'
+        height={100}
+        width={1550}
+        alt='heroSectionImage'
+        className='drop-shadow-xl/20'
+      ></Image>
+      <div className='title-statement drop-shadow-lg min-w-[100vw] max-w-[100vw]  overflow-x-hidden bg-white/40 flex flex-col gap-5 py-10 justify-center items-center'>
+        <h1 className='first-line text-6xl text-green-800 text-shadow-lg'>
+          Take Hold of Your Imaan,
+        </h1>
+        <h1 className='second-line text-4xl text-shadow-lg/20'>
+          Don't Give it to Shaitan
+        </h1>
+        <h3 className='text-xl font-semibold mt-3 bg-green-900/30 rounded-md p-2'>
+          Islamic Content, Dawah, Deen, Battle Against Shaitan
+        </h3>
+      </div>
+      <div className='times flex max-w-[100vw] font-bold min-w-[100vw] drop-shadow-xl/20 overflow-x-hidden; bg-black/20 gap-2 text-green-800 justify-between items-center px-5'>
+        <h1 id='day' className='text-xl '>
           <Script>{`
           //day
           const weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
@@ -40,9 +62,6 @@ time.innerHTML = timestamp;
         </h1>
         <h1 className='text-xl'>17-Shawwal 1446 AH</h1>
       </div>
-
-      {/* logo image */}
-      <Image src='/logo.png' alt='logo' height={100} width={300}></Image>
     </div>
   )
 }

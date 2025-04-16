@@ -7,7 +7,7 @@ import './globals.css'
 
 const Home = () => {
   return (
-    <div className='flex flex-col min-w-[100vw] mx-auto justify-center items-center'>
+    <div className='flex flex-col max-w-[100vw] overflow-x-hidden; justify-center items-center'>
       <HeroSection />
       <Services />
     </div>
