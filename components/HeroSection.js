@@ -15,7 +15,7 @@ const HeroSection = () => {
         alt='heroSectionImage'
         className='drop-shadow-xl/20'
       ></Image>
-      <div className='title-statement drop-shadow-lg min-w-[100vw] max-w-[100vw]  overflow-x-hidden bg-white/40 flex flex-col gap-5 py-10 justify-center items-center'>
+      <div className='title-statement drop-shadow-lg max-w-[100vw] min-w-[100vw] overflow-x-hidden bg-white/40 flex flex-col gap-5 py-10 justify-center items-center'>
         <h1 className='first-line text-6xl text-green-800 text-shadow-lg'>
           Take Hold of Your Imaan,
         </h1>
@@ -25,8 +25,20 @@ const HeroSection = () => {
         <h3 className='text-xl font-semibold mt-3 bg-green-900/30 rounded-md p-2'>
           Islamic Content, Dawah, Deen, Battle Against Shaitan
         </h3>
+        <div className='buttons '>
+          <span>
+            <button className=' bg-linear-to-br from-green-900 to-green-700 hover:bg-white text-white hover:text-green-500 font-bold py-2 px-6 m-2 rounded shadow-xl cursor-pointer'>
+              Quran
+            </button>
+          </span>
+          <span>
+            <button className='bg-linear-to-br from-slate-200 to-white/40 hover:bg-green-900 text-green-900 hover:text-white font-bold py-2 px-6 m-2 rounded shadow-xl cursor-pointer'>
+              Duas
+            </button>
+          </span>
+        </div>
       </div>
-      <div className='times flex max-w-[100vw] font-bold min-w-[100vw] drop-shadow-xl/20 overflow-x-hidden; bg-black/20 gap-2 text-green-800 justify-between items-center px-5'>
+      <div className='times flex font-bold min-w-[99vw] max-w-[100vw] drop-shadow-xl/20 bg-black/20  text-green-800 justify-around items-center '>
         <h1 id='day' className='text-xl '>
           <Script>{`
           //day
