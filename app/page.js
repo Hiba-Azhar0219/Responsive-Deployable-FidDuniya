@@ -2,6 +2,9 @@ import React from 'react'
 import HeroSection from '@/components/HeroSection'
 import Services from '@/components/Services'
 import MotivationForQuran from '@/components/MotivationForQuran'
+import ListenToQuran from '@/components/ListenToQuran'
+import MotivationForDua from '@/components/MotivationForDua'
+import DailySupplications from '@/components/DailySupplications'
 
 import './globals.css'
 
@@ -11,6 +14,9 @@ const Home = () => {
       <HeroSection />
       <Services />
       <MotivationForQuran />
+      <ListenToQuran />
+      <MotivationForDua />
+      <DailySupplications />
     </div>
   )
 }
