@@ -1,5 +1,6 @@
 import React from 'react'
 import Script from 'next/script'
+import Link from 'next/link'
 import Image from 'next/image'
 const HeroSection = () => {
   return (
@@ -18,12 +19,12 @@ const HeroSection = () => {
           <div className='buttons '>
             <span>
               <button className=' bg-linear-to-br from-green-600 to-green-700 hover:bg-white text-white hover:text-green-500 font-bold py-2 px-6 m-2 rounded shadow-xl cursor-pointer'>
-                Quran
+                <Link href='/Quran'>Quran</Link>
               </button>
             </span>
             <span>
               <button className='bg-linear-to-br from-slate-200 to-white/40 hover:bg-green-900 text-green-900 hover:text-white font-bold py-2 px-6 m-2 rounded shadow-xl cursor-pointer'>
-                Duas
+                <Link href='/Duas'>Duas</Link>
               </button>
             </span>
           </div>
@@ -37,7 +38,23 @@ const HeroSection = () => {
         ></Image>
       </div>
 
-      <div className='times flex font-bold min-w-[99vw] max-w-[100vw] drop-shadow-xl/20 bg-black/5  text-green-800 justify-around items-center mt-8 '>
+      {/* search bar */}
+      {/* <div className='duaDropDown mt-15  flex flex-col min-w-[100vw] justify-center items-center relative hover: z-[2]'>
+        <input
+          type='text'
+          className=' border-1 border-green-700/20 shadow-md h-10 w-80 bg-linear-to-t from-white to-green-400/20  p-2y px-4 rounded-3xl '
+          placeholder='Search Dua for'
+        />
+        <div className='dropDownOfDua flex flex-col hidden z-[2]   top-10'>
+          <Link href='#'>Morning</Link>
+          <Link href='#'>Sleep</Link>
+          <Link href='#'>Anxiety</Link>
+
+          <Link href='#'>More</Link>
+        </div>
+      </div> */}
+
+      {/* <div className='times flex font-bold min-w-[99vw] max-w-[100vw] drop-shadow-xl/20 bg-black/5  text-green-800 justify-around items-center mt-8 '>
         <h1 id='day' className='text-xl '>
           <Script>{`
           //day
@@ -72,7 +89,7 @@ time.innerHTML = timestamp;
           time
         </h1>
         <h1 className='text-xl'>17-Shawwal 1446 AH</h1>
-      </div>
+      </div> */}
     </div>
   )
 }

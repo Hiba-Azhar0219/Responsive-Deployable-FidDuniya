@@ -1,38 +1,43 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const Services = () => {
   return (
     <div className='services flex flex-col gap-5 justify-center items-center pt-10 bg-white'>
       <h1 className=' text-3xl text-green-900 pb-4 text-shadow-lg'>Services</h1>
       <div className='flex gap-8  min-h-[28vh] min-w-[100vw] justify-center items-center text-white'>
-        <div className='Tafseer flex flex-col gap-2 justify-center items-center w-80 h-60 rounded-2xl  bg-linear-to-bl from-green-500/50 to-white shadow-xl/20'>
-          <Image
-            className='fill-white drop-shadow-lg drop-shadow-white/50'
-            src='/tafseer.svg'
-            width={90}
-            height={80}
-            alt='tafseerIcon'
-          ></Image>
-          <h2 className='text-xl text-green-900 font-bold'>Tafseer</h2>
-          <p className='text-center text-black text-sm p-2'>
-            Offers insightful and thorough explanations of Quranic verses
-          </p>
-        </div>
-        <div className='Seerat flex flex-col gap-2  justify-center items-center  w-80 h-60 rounded-2xl bg-linear-to-bl  from-green-500/50 to-white shadow-xl/20'>
-          <Image
-            className='drop-shadow-lg drop-shadow-white/50'
-            src='/seerat.svg'
-            width={90}
-            height={80}
-            alt='seeratIcon'
-          ></Image>
-          <h2 className='text-xl text-green-900 font-bold'>Seerat</h2>
-          <p className='text-center text-black text-sm p-2'>
-            Provide the knowledge and confidence to understand, read and recite
-            the Holy Qur'an
-          </p>
-        </div>
+        <Link href='https://youtube.com/@fid-dunya.wal-akhira?si=c5a9KeuQ_mG-U5s_'>
+          <div className='Tafseer flex flex-col gap-2 justify-center items-center w-80 h-60 rounded-2xl  bg-linear-to-bl from-green-500/50 to-white shadow-xl/20'>
+            <Image
+              className='fill-white drop-shadow-lg drop-shadow-white/50'
+              src='/tafseer.svg'
+              width={90}
+              height={80}
+              alt='tafseerIcon'
+            ></Image>
+            <h2 className='text-xl text-green-900 font-bold'>Tafseer</h2>
+            <p className='text-center text-black text-sm p-2'>
+              Offers insightful and thorough explanations of Quranic verses
+            </p>
+          </div>
+        </Link>
+        <Link href='https://youtube.com/@fid-dunya.wal-akhira?si=c5a9KeuQ_mG-U5s_'>
+          <div className='Seerat flex flex-col gap-2  justify-center items-center  w-80 h-60 rounded-2xl bg-linear-to-bl  from-green-500/50 to-white shadow-xl/20'>
+            <Image
+              className='drop-shadow-lg drop-shadow-white/50'
+              src='/seerat.svg'
+              width={90}
+              height={80}
+              alt='seeratIcon'
+            ></Image>
+            <h2 className='text-xl text-green-900 font-bold'>Seerat</h2>
+            <p className='text-center text-black text-sm p-2'>
+              Provide the knowledge and confidence to understand, read and
+              recite the Holy Qur'an
+            </p>
+          </div>
+        </Link>
         <div className='Salah Tracker flex flex-col gap-2 justify-center items-center w-80 h-60 rounded-2xl bg-linear-to-bl  from-green-500/50 to-white shadow-xl/20'>
           <Image
             className='fill-white drop-shadow-lg drop-shadow-white/50'

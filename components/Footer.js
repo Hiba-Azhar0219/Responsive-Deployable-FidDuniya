@@ -1,13 +1,25 @@
 import React from 'react'
+import Image from 'next/image'
 
 const Footer = () => {
   return (
-    <footer className='py-3 px-2 bg-green-900 text-white font-bold'>
-      <div className='flex justify-center items - center'>
-        <p>
-          Author: Hiba Azhar © All Rights Reserved | Contact us @
-          fiddunya@gmail.com
-        </p>
+    <footer className='  text-sm mt-3 h-20 gap-8 py-3 px-2 bg-linear-to-r from-green-500/40 to-green-600/30 text-green-900  flex  justify-around items-center'>
+      <div>© 2025 FidDuniya WalAkhirah | All Rights Reserved</div>
+
+      <div className='flex flex-col jusify center items-start'>
+        <div className='flex gap-2'>
+          <Image src='/email.png' height={4} width={26} alt='email'></Image>
+          <p className='font-bold'>fiduniyaWalakhirah@gmailcom</p>
+        </div>
+        <div className='flex gap-2 justify-center items-center'>
+          <Image src='/youtube.png' height={5} width={25} alt='youtube'></Image>
+          <a
+            className='underline font-bold  justify-center items-center'
+            href='https://youtube.com/@fid-dunya.wal-akhira?si=c5a9KeuQ_mG-U5s_'
+          >
+            @ Fid-Dunya.Wal-Akhira Youtube Channel
+          </a>
+        </div>
       </div>
     </footer>
   )
