@@ -7,8 +7,8 @@ const MotivationForQuran = () => {
         Allah Makes Impossible Possible
       </h1>
       <h3 className='text-xl text-shadow-md'>
-        Once you make a decision, put your trust in Allah. Surely Allah loves
-        those who trust in Him.
+        "Once you make a decision, put your trust in Allah. Surely Allah loves
+        those who trust in Him."
       </h3>
     </div>
   )

@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 import Image from 'next/image'
 
 const Supplications = () => {
@@ -51,9 +52,11 @@ const Supplications = () => {
           <h1 className='text-green-900 text-lg  text-shadow-sm'>Guidance</h1>
         </div>
       </div>
-      <button className='text-white bg-linear-to-br from-green-600/70 to-green-700/80 hover:from-green-600 to-green-700 hover:text-white hover:font-bold py-2 px-4 m-2 rounded shadow-xl cursor-pointer'>
-        More Supplications
-      </button>
+      <Link href='/Duas'>
+        <button className='text-white bg-linear-to-br from-green-600/70 to-green-700/80 hover:from-green-600 to-green-700 hover:text-white hover:font-bold py-2 px-4 m-2 rounded shadow-xl cursor-pointer'>
+          More Supplications
+        </button>
+      </Link>
     </div>
   ) //Supplications div ends
 }

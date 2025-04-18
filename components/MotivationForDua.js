@@ -7,7 +7,7 @@ const MotivationForDua = () => {
         Always make Duas
       </h1>
       <h3 className='text-xl text-shadow-md'>
-        Allah never rejects your prayers. He answers in all different ways.
+        "Allah never rejects your prayers. He answers in all different ways."
       </h3>
     </div>
   )
