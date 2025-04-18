@@ -12,7 +12,7 @@ const Supplications = () => {
         <div className='flex flex-col justify-center items-center gap-4 cursor-pointer '>
           {/* sleeping */}
           <Image
-            className='bg-[url("/pattern.png")] rounded-full '
+            className='bg-[url("/supplicationPattern.png")] rounded-full '
             src='/sleeping.PNG'
             height={170}
             width={190}
@@ -21,9 +21,9 @@ const Supplications = () => {
           <h1 className='text-green-900 text-shadow-sm text-lg'>Sleep</h1>
         </div>
         {/* excellence */}
-        <div className='flex flex-col justify-center items-center gap-4 cursor-pointer  cursor-pointer '>
+        <div className='flex flex-col justify-center items-center gap-4 cursor-pointer'>
           <Image
-            className='bg-[url("/pattern.png")] rounded-full '
+            className='bg-[url("/supplicationPattern.png")] rounded-full '
             src='/dua_excellence.PNG'
             height={170}
             width={190}
@@ -35,7 +35,7 @@ const Supplications = () => {
         <div className='flex flex-col justify-center items-center gap-4 cursor-pointer '>
           {/* Repentance */}
           <Image
-            className='bg-[url("/pattern.png")] rounded-full '
+            className='bg-[url("/supplicationPattern.png")] rounded-full '
             src='/repentance.PNG'
             height={170}
             width={190}
@@ -47,7 +47,7 @@ const Supplications = () => {
         <div className='flex flex-col justify-center items-center gap-4 cursor-pointer '>
           {/* guidance */}
           <Image
-            className='bg-[url("/pattern.png")] rounded-full '
+            className='bg-[url("/supplicationPattern.png")] rounded-full '
             src='/guidance.PNG'
             height={170}
             width={190}
@@ -57,7 +57,7 @@ const Supplications = () => {
         </div>
       </div>
       <Link href='/Duas'>
-        <button className='text-white bg-linear-to-br from-green-600/70 to-green-700/80 hover:from-green-600 to-green-700 hover:text-white hover:font-bold py-2 px-4 m-2 rounded shadow-xl cursor-pointer'>
+        <button className='text-white bg-linear-to-br from-green-600/70 to-green-700/80 hover:from-green-600 hover:to-green-700 hover:text-white hover:font-bold py-2 px-4 m-2 rounded shadow-xl cursor-pointer'>
           More Supplications
         </button>
       </Link>

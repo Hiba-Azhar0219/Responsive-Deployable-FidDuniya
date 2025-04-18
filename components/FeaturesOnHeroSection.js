@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 
-const Services = () => {
+const FeaturesOnHeroSection = () => {
   return (
     <div className='services flex flex-col gap-5 justify-center items-center pt-10 bg-white'>
       <h1 className=' text-3xl text-green-900 pb-4 text-shadow-lg'>Features</h1>
@@ -12,11 +12,11 @@ const Services = () => {
             <Image
               className='fill-white drop-shadow-lg drop-shadow-white/50'
               src='/tafseer.svg'
-              width={90}
-              height={80}
+              width={70}
+              height={60}
               alt='tafseerIcon'
             ></Image>
-            <h2 className='text-xl text-green-900 font-bold'>Tafseer</h2>
+            <h2 className='text-[18px] text-green-900 font-bold'>Tafseer</h2>
             <p className='text-center text-black text-sm p-2'>
               Offers insightful and thorough explanations of Quranic verses
             </p>
@@ -27,11 +27,11 @@ const Services = () => {
             <Image
               className='drop-shadow-lg drop-shadow-white/50'
               src='/seerat.svg'
-              width={90}
-              height={80}
+              width={70}
+              height={60}
               alt='seeratIcon'
             ></Image>
-            <h2 className='text-xl text-green-900 font-bold'>Seerat</h2>
+            <h2 className='text-[18px] text-green-900 font-bold'>Seerat</h2>
             <p className='text-center text-black text-sm p-2'>
               Provide the knowledge and confidence to understand, read and
               recite the Holy Qur'an
@@ -42,12 +42,14 @@ const Services = () => {
           <Image
             className='fill-white drop-shadow-lg drop-shadow-white/50'
             src='/salahTracker.svg'
-            width={90}
-            height={80}
+            width={70}
+            height={60}
             alt='SalahTrackerIcon'
           ></Image>
-          <h2 className='text-xl text-green-900 font-bold'>Salah Tracker</h2>
-          <p className='text-center text-black text-sm pt-1 px-2'>
+          <h2 className='text-[18px] text-green-900 font-bold'>
+            Salah Tracker
+          </h2>
+          <p className='text-center text-black text-sm px-2'>
             Help organized and keep you in check with Namaz
           </p>
           <h6 className='text-xs text-green-700'>Coming Soon!</h6>
@@ -56,18 +58,18 @@ const Services = () => {
           <Image
             className='fill-white drop-shadow-lg drop-shadow-white/50'
             src='/planner.svg'
-            width={90}
-            height={80}
+            width={70}
+            height={60}
             alt='plannerIcon'
           ></Image>
-          <h2 className='text-xl text-green-900 font-bold'>Planner</h2>
-          <p className='text-center text-black text-sm pt-1 px-2'>
+          <h2 className='text-[18px] text-green-900 font-bold'>Planner</h2>
+          <p className='text-center text-black text-sm px-2'>
             Assist integrating your ibadaah into daily routine
           </p>
           <h6 className='text-xs text-green-700'>Coming Soon!</h6>
         </div>
       </div>
-      <Link href='/Services'>
+      <Link href='/Features'>
         <button className=' mt-8 h-10 w-35 text-white bg-linear-to-br from-green-600/60 to-green-700/70 hover:from-green-600 to-green-700 hover:text-white hover:font-bold py-2  rounded shadow-xl cursor-pointer'>
           About Features
         </button>
@@ -76,4 +78,4 @@ const Services = () => {
   )
 }
 
-export default Services
+export default FeaturesOnHeroSection

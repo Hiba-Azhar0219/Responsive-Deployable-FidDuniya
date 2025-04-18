@@ -5,7 +5,7 @@ const Parahs = () => {
   return (
     <div className='flex flex-col mt-7 justify-center items-center'>
       <h1 className='text-3xl text-green-900  text-shadow-lg'>Parahs</h1>
-      <div className='surahList text-green-900 w-[100vw] h-[60vh] mt-7 bg-linear-to-r from-green-600/10 to-green-200/30'>
+      <div className='surahList text-green-900 w-[100vw] h-[60vh] mt-7  bg-linear-to-r from-green-200/10 to-green-400/20'>
         <div
           id='parahContainer'
           className=' flex gap-6 flex-wrap justify-center items-center p-3'

@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const Footer = () => {
   return (
@@ -9,7 +10,9 @@ const Footer = () => {
       <div className='flex flex-col jusify center items-start'>
         <div className='flex gap-2'>
           <Image src='/email.png' height={4} width={26} alt='email'></Image>
-          <p className='font-bold'>fiduniyaWalakhirah@gmailcom</p>
+          <Link href='id.dunya.wal.akhira@gmail.com'>
+            <p className='font-bold'>fid.dunya.wal.akhira@gmail.com</p>
+          </Link>
         </div>
         <div className='flex gap-2 justify-center items-center'>
           <Image src='/youtube.png' height={5} width={25} alt='youtube'></Image>

@@ -32,7 +32,7 @@ const Navbar = () => {
         <Link href='/Duas'>
           <li>Duas</li>
         </Link>
-        <Link href='/Services'>
+        <Link href='/Features'>
           <li>Features</li>
         </Link>
         <Link href='/Contact'>

@@ -1,6 +1,6 @@
 import React from 'react'
 import HeroSection from '@/components/HeroSection'
-import Services from '@/components/Services'
+import FeaturesOnHeroSection from '@/components/FeaturesOnHeroSection'
 import MotivationForQuran from '@/components/MotivationForQuran'
 import ListenToQuran from '@/components/ListenToQuran'
 import MotivationForDua from '@/components/MotivationForDua'
@@ -13,7 +13,7 @@ const Home = () => {
   return (
     <div className='flex flex-col max-w-[100vw] overflow-x-hidden; justify-center items-center'>
       <HeroSection />
-      <Services />
+      <FeaturesOnHeroSection />
       <MotivationForQuran />
       <ListenToQuran />
       <MotivationForDua />
