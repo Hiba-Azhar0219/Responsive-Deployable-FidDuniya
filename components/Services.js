@@ -5,7 +5,7 @@ import Link from 'next/link'
 const Services = () => {
   return (
     <div className='services flex flex-col gap-5 justify-center items-center pt-10 bg-white'>
-      <h1 className=' text-3xl text-green-900 pb-4 text-shadow-lg'>Services</h1>
+      <h1 className=' text-3xl text-green-900 pb-4 text-shadow-lg'>Features</h1>
       <div className='flex gap-8  min-h-[28vh] min-w-[100vw] justify-center items-center text-white'>
         <Link href='https://youtube.com/@fid-dunya.wal-akhira?si=c5a9KeuQ_mG-U5s_'>
           <div className='Tafseer flex flex-col gap-2 justify-center items-center w-80 h-60 rounded-2xl  bg-linear-to-bl from-green-500/50 to-white shadow-xl/20'>
@@ -67,6 +67,11 @@ const Services = () => {
           <h6 className='text-xs text-green-700'>Coming Soon!</h6>
         </div>
       </div>
+      <Link href='/Services'>
+        <button className=' mt-8 h-10 w-35 text-white bg-linear-to-br from-green-600/60 to-green-700/70 hover:from-green-600 to-green-700 hover:text-white hover:font-bold py-2  rounded shadow-xl cursor-pointer'>
+          About Features
+        </button>
+      </Link>
     </div>
   )
 }

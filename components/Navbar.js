@@ -15,10 +15,10 @@ const Navbar = () => {
           height={120}
           alt='logo'
         ></Image>
-        <h1 className='text-2xl font-bold '>Fid-dunya Wal-Akhirah</h1>
+        <h1 className='text-2xl font-bold '>Fid-Dunya Wal-Akhirah</h1>
       </div>
 
-      <ul className='flex gap-15 text-base text-shadow-sm'>
+      <ul className='flex gap-10 text-base text-shadow-sm'>
         <Link href='/'>
           <li>Home</li>
         </Link>
@@ -26,8 +26,14 @@ const Navbar = () => {
         <Link href='/About'>
           <li>About</li>
         </Link>
+        <Link href='/Quran'>
+          <li>Quran</li>
+        </Link>
+        <Link href='/Duas'>
+          <li>Duas</li>
+        </Link>
         <Link href='/Services'>
-          <li>Services</li>
+          <li>Features</li>
         </Link>
         <Link href='/Contact'>
           <li>Contact</li>

@@ -12,6 +12,7 @@ const Supplications = () => {
         <div className='flex flex-col justify-center items-center gap-4 cursor-pointer '>
           {/* sleeping */}
           <Image
+            className='bg-[url("/pattern.png")] rounded-full '
             src='/sleeping.PNG'
             height={170}
             width={190}
@@ -22,6 +23,7 @@ const Supplications = () => {
         {/* excellence */}
         <div className='flex flex-col justify-center items-center gap-4 cursor-pointer  cursor-pointer '>
           <Image
+            className='bg-[url("/pattern.png")] rounded-full '
             src='/dua_excellence.PNG'
             height={170}
             width={190}
@@ -33,6 +35,7 @@ const Supplications = () => {
         <div className='flex flex-col justify-center items-center gap-4 cursor-pointer '>
           {/* Repentance */}
           <Image
+            className='bg-[url("/pattern.png")] rounded-full '
             src='/repentance.PNG'
             height={170}
             width={190}
@@ -44,6 +47,7 @@ const Supplications = () => {
         <div className='flex flex-col justify-center items-center gap-4 cursor-pointer '>
           {/* guidance */}
           <Image
+            className='bg-[url("/pattern.png")] rounded-full '
             src='/guidance.PNG'
             height={170}
             width={190}
