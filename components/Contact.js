@@ -8,48 +8,35 @@ const Contact = () => {
       <h1 className='heading text-2xl text-green-900 text-shadow-lg'>
         Contact Us
       </h1>
-
-      <div className='email-youtube flex gap-15 justify-center '>
-        <Link href='id.dunya.wal.akhira@gmail.com'>
-          <div className='email-div flex gap-2 py-2 px-4 bg-white/60 items-center rounded-2xl'>
-            <Image src='/email.png' width={30} height={20} alt='email'></Image>
-            <h2>Email Address</h2>
-          </div>
-        </Link>
-
-        <Link href='https://www.youtube.com/@fid-dunya.wal-akhira'>
-          <div className='youtube-div flex gap-2 py-2 px-4 bg-white/60 items-center rounded-2xl'>
-            <Image
-              src='/youtube.png'
-              width={30}
-              height={20}
-              alt='youtube'
-            ></Image>
-            <h2>Youtube Channel</h2>
-          </div>
-        </Link>
-      </div>
-      {/* email and youtube channel ended */}
-      <div className='app-and-message flex gap-35 mt-5 justify-center'>
-        <div className='app flex flex-col'>
-          <Link href='/app-debug.apk' download>
-            <h1 className='py-3 text-green-900 text-lg text-shadow-2xs'>
-              Download our App
-            </h1>
-            <Image
-              className='rounded-2xl'
-              src='/shadowMobileIcon.png'
-              width={150}
-              height={200}
-              alt='mobile icon'
-            ></Image>
-          </Link>
+      <div className='location-and-message flex gap-10 justify-center items-center'>
+        <div className='location flex flex-col'>
+          <h1 className='text-green-900 text-xl text-shadow-2xs text-center'>
+            Our Location
+          </h1>
+          <iframe
+            className='shadow-xl rounded-2xl'
+            src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d462118.02491053584!2d67.15546194999999!3d25.193202399999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33e06651d4bbf%3A0x9cf92f44555a0c23!2sKarachi!5e0!3m2!1sen!2s!4v1745308519444!5m2!1sen!2s'
+            width={500}
+            height={400}
+          ></iframe>
         </div>
         {/* mobile-app ends */}
 
         <div className='send-message-div flex flex-col gap-4'>
+          <Link href='https://mail.google.com/mail/u/0/#inbox'>
+            <div className='email-div flex gap-2 py-2 px-4 bg-white/40 items-center rounded-2xl'>
+              <Image
+                src='/email.png'
+                width={30}
+                height={20}
+                alt='email'
+              ></Image>
+              <h2>Email Address: id.dunya.wal.akhira@gmail.com</h2>
+            </div>
+          </Link>
+
           <input
-            className='bg-white/70 py-2 px-5 rounded-xl
+            className='bg-white/70 py-2 px-5 rounded-lg
             '
             type='text'
             height={10}
@@ -57,22 +44,21 @@ const Contact = () => {
             placeholder='Enter your name'
           />
           <input
-            className='bg-white/70 py-2 px-5 rounded-xl'
+            className='bg-white/70 py-2 px-5 rounded-lg'
             type='text'
             height={50}
             width={100}
             placeholder='Enter your email address'
           />
           <textarea
-            className='bg-white/70 py-2 px-5 w-100 h-40 rounded-xl'
+            className='bg-white/70 py-3 px-5 w-100 h-40 rounded-xl'
             type='text'
             placeholder='Enter your message'
           />
-          <span>
-            <button className=' bg-linear-to-br from-green-600 to-green-700 hover:bg-white text-white hover:text-green-500 font-bold py-2 px-6 m-2 rounded shadow-xl cursor-pointer'>
-              <Link href='/'>Submit</Link>
-            </button>
-          </span>
+
+          <button className=' bg-linear-to-br from-green-600 to-green-700 hover:bg-white text-white hover:text-green-500 font-bold py-2 px-6 rounded shadow-xl cursor-pointer'>
+            <Link href='/'>Submit</Link>
+          </button>
         </div>
       </div>
     </div>

@@ -17,7 +17,7 @@ const FeaturesOnHeroSection = () => {
               alt='tafseerIcon'
             ></Image>
             <h2 className='text-[18px] text-green-900 font-bold'>Tafseer</h2>
-            <p className='text-center text-black text-sm p-2'>
+            <p className='text-center text-gray-700 text-sm p-2'>
               Offers insightful and thorough explanations of Quranic verses
             </p>
           </div>
@@ -32,7 +32,7 @@ const FeaturesOnHeroSection = () => {
               alt='seeratIcon'
             ></Image>
             <h2 className='text-[18px] text-green-900 font-bold'>Seerat</h2>
-            <p className='text-center text-black text-sm p-2'>
+            <p className='text-center text-gray-700 text-sm p-2'>
               Provide the knowledge and confidence to understand, read and
               recite the Holy Qur'an
             </p>
@@ -49,7 +49,7 @@ const FeaturesOnHeroSection = () => {
           <h2 className='text-[18px] text-green-900 font-bold'>
             Salah Tracker
           </h2>
-          <p className='text-center text-black text-sm px-2'>
+          <p className='text-center text-gray-700 text-sm px-2'>
             Help organized and keep you in check with Namaz
           </p>
           <h6 className='text-xs text-green-700'>Coming Soon!</h6>
@@ -63,14 +63,14 @@ const FeaturesOnHeroSection = () => {
             alt='plannerIcon'
           ></Image>
           <h2 className='text-[18px] text-green-900 font-bold'>Planner</h2>
-          <p className='text-center text-black text-sm px-2'>
+          <p className='text-center text-gray-700 text-sm px-2'>
             Assist integrating your ibadaah into daily routine
           </p>
           <h6 className='text-xs text-green-700'>Coming Soon!</h6>
         </div>
       </div>
       <Link href='/Features'>
-        <button className=' mt-8 h-10 w-35 text-white bg-linear-to-br from-green-600/60 to-green-700/70 hover:from-green-600 to-green-700 hover:text-white hover:font-bold py-2  rounded shadow-xl cursor-pointer'>
+        <button className=' mt-8 h-10 w-35 text-white bg-linear-to-br from-green-600/60 to-green-700/70 hover:from-green-600 hover:to-green-700 hover:text-white hover:font-bold py-2  rounded shadow-xl cursor-pointer'>
           About Features
         </button>
       </Link>

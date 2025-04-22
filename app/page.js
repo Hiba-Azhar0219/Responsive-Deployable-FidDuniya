@@ -6,6 +6,7 @@ import ListenToQuran from '@/components/ListenToQuran'
 import MotivationForDua from '@/components/MotivationForDua'
 import DailySupplications from '@/components/DailySupplications'
 import Supplications from '@/components/Supplications'
+import Promotion from '@/components/Promotion'
 
 import './globals.css'
 
@@ -19,6 +20,7 @@ const Home = () => {
       <MotivationForDua />
       <DailySupplications />
       <Supplications />
+      <Promotion />
     </div>
   )
 }
