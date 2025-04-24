@@ -53,7 +53,7 @@ const Footer = () => {
             ></Image>
 
             <Link href='https://mail.google.com/mail/u/0/#inbox'>
-              <p className='underline '>id.dunya.wal.akhira@gmail.com</p>
+              <p className='underline '>fid.dunya.wal.akhira@gmail.com</p>
             </Link>
           </div>
           <div className='flex gap-2 justify-center items-center'>

@@ -31,7 +31,7 @@ const Contact = () => {
                 height={20}
                 alt='email'
               ></Image>
-              <h2>Email Address: id.dunya.wal.akhira@gmail.com</h2>
+              <h2>Email Address: fid.dunya.wal.akhira@gmail.com</h2>
             </div>
           </Link>
 
