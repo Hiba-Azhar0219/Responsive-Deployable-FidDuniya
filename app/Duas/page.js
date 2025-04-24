@@ -3,7 +3,6 @@ import React from 'react'
 import Image from 'next/image'
 
 const Duas = () => {
-  // bg-[url("/supplicationPattern.png")] bg-cover bg-no-repeat
   return (
     <div className='mt-10 text-center bg-[url("/mosqueOpacity.png")] bg-cover relative'>
       <div className='lamp absolute left-12 '>
