@@ -5,13 +5,13 @@ import Image from 'next/image'
 const Duas = () => {
   return (
     <div className='mt-10 text-center bg-[url("/mosqueOpacity.png")] bg-cover relative'>
-      <div className='lamp absolute left-12 '>
+      <div className='lamp absolute'>
         <Image src='/glow.png' width={100} height={700} alt='lamp'></Image>
       </div>
       <h1 className='text-3xl text-green-900  text-shadow-lg mb-5 '>
         Supplications
       </h1>
-      <div className='supplication-categories-div flex gap-10 p-5 max-w-[90vw] flex-wrap justify-center items-center m-auto'>
+      <div className='supplication-categories-div flex gap-7 p-5 max-w-[90vw] flex-wrap justify-center items-center m-auto'>
         <SupplicationCategory
           categoryName='Sleeping'
           ImageSrc='/sleeping.png'

@@ -19,7 +19,7 @@ const Promotion = () => {
             stronger every day. Download now and bring barakah into your daily
             routine.
           </p>
-          <Link href='https://play.google.com/store/apps'>
+          <Link href='https://play.google.com/store/apps/details?id=com.islamic.fiddunya_wal_akhirah'>
             <button className='text-white bg-linear-to-br from-green-600/70 to-green-700/80 hover:from-green-600 hover:to-green-700 hover:text-white hover:font-bold py-2 px-4 m-2 rounded shadow-xl cursor-pointer'>
               Download App
             </button>

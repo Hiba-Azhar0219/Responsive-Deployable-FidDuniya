@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 const Footer = () => {
   return (
-    <footer className='flex flex-col mt-3 bg-linear-to-r from-green-800/90 to-green-800 text-white'>
+    <footer className=' flex flex-col mt-3 bg-linear-to-r from-green-800/90 to-green-800 text-white'>
       <div className=' text-sm h-90 gap-2 px-2  flex justify-around items-center '>
         <div className='fid-duniya-description flex flex-col  max-w-[30vw] gap-5 text-base '>
           <div className='copyright-div flex gap-4 items-center'>
@@ -79,7 +79,7 @@ const Footer = () => {
             ></Image>
             <Link
               className='underline justify-center items-center'
-              href='https://play.google.com/store/apps'
+              href='https://play.google.com/store/apps/details?id=com.islamic.fiddunya_wal_akhirah'
             >
               Download App
             </Link>
