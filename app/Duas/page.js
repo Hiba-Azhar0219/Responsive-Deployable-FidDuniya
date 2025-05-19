@@ -1,6 +1,7 @@
 import SupplicationCategory from '@/components/SupplicationCategory'
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const Duas = () => {
   return (
@@ -64,6 +65,11 @@ const Duas = () => {
         />
         <SupplicationCategory categoryName='Salah' ImageSrc='/salah.png' />
       </div>
+      <Link href='/AddSupplicationCategory'>
+        <button className='text-white bg-linear-to-br from-green-600/70 to-green-700/80 hover:from-green-600 hover:to-green-700 hover:text-white hover:font-bold py-2 px-4 m-2 rounded shadow-xl cursor-pointer'>
+          Add Supplication Category
+        </button>
+      </Link>
     </div>
   )
 }
