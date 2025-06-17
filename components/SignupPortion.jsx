@@ -1,125 +1,137 @@
 'use client'
-import React, { useState } from 'react'
-import Image from 'next/image'
+
 import Link from 'next/link'
+import { useState } from 'react'
 
 const SignupPortion = () => {
-  const [name, setName] = useState('')
-  const [email, setEmail] = useState('')
-  const [password, setPassword] = useState('')
-  const [error, setError] = useState('')
-  const [loading, setLoading] = useState(false)
-  const [successMessage, setSuccessMessage] = useState('')
+  const [formData, setFormData] = useState({
+    username: '',
+    email: '',
+    password: '',
+    phoneNumber: '',
+    gender: '',
+  })
 
-  const handleSignup = async (e) => {
+  const [message, setMessage] = useState(null)
+
+  const handleChange = (e) => {
+    const { name, value } = e.target
+    setFormData({ ...formData, [name]: value })
+  }
+
+  const handleSubmit = async (e) => {
     e.preventDefault()
-    setError('')
-    setLoading(true)
-    setSuccessMessage('')
-
-    if (!name || !email || !password) {
-      setError('Name, email, and password are required.')
-      setLoading(false)
-      return
-    }
 
     try {
-      const response = await fetch('http://localhost:8080/api/signup', {
+      const res = await fetch('http://localhost:3001/users/create', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ name, email, password }),
+        body: JSON.stringify(formData),
       })
 
-      if (!response.ok) {
-        const errorData = await response.json()
-        let errorMessage = 'Signup failed.'
-        if (errorData && errorData.message) {
-          errorMessage = errorData.message
-        } else if (response.status === 409) {
-          errorMessage = 'Email Already Exists'
-        }
-        setError(errorMessage)
-        setLoading(false)
-        return
+      const contentType = res.headers.get('content-type')
+
+      if (!res.ok) {
+        const errorText = contentType?.includes('application/json')
+          ? (await res.json())?.message || 'Unknown error'
+          : await res.text()
+        throw new Error(errorText)
       }
 
-      console.log('Signup successful!')
-      setName('')
-      setEmail('')
-      setPassword('')
-      setLoading(false)
-      setSuccessMessage('Signed Up Successfully!')
-    } catch (err) {
-      setError(err.message || 'An error occurred during signup.')
-      setLoading(false)
+      setMessage('User created successfully!')
+      setFormData({
+        username: '',
+        email: '',
+        password: '',
+        phoneNumber: '',
+        gender: '',
+      })
+
+      // optional: redirect or toast
+      setTimeout(() => {
+        window.location.href = '/About' // login page
+      }, 1500)
+    } catch (error) {
+      setMessage(`Error: ${error.message}`)
     }
   }
 
   return (
     <div className='main-sinUp-portion flex justify-center items-center min-h-[100vh]'>
-      <div className='flex flex-col justify-center items-center gap-5'>
+      <form
+        onSubmit={handleSubmit}
+        className='flex flex-col justify-center items-center gap-5'
+      >
         <h1 className='text-5xl text-green-900 text-shadow-lg'>SignUp</h1>
+
         <input
-          className='mt-5 p-3 min-h-[20] w-[300] bg-emerald-100 shadow-xl rounded-md'
+          className='mt-5 p-3 w-[300px] bg-emerald-100 shadow-xl rounded-md'
           type='text'
-          name='name'
-          id='name'
+          name='username'
           placeholder='Full Name'
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-          disabled={loading}
+          value={formData.username}
+          onChange={handleChange}
+          required
         />
         <input
-          className=' p-3 min-h-[20] w-[300] bg-emerald-100 shadow-xl rounded-md'
-          type='text'
+          className='p-3 w-[300px] bg-emerald-100 shadow-xl rounded-md'
+          type='email'
           name='email'
-          id='email'
           placeholder='Email Address'
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          disabled={loading}
+          value={formData.email}
+          onChange={handleChange}
+          required
         />
         <input
-          className='p-3 min-h-[20] w-[300] bg-emerald-100 shadow-xl rounded-md'
+          className='p-3 w-[300px] bg-emerald-100 shadow-xl rounded-md'
           type='password'
           name='password'
-          id='password'
           placeholder='Password'
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-          disabled={loading}
+          value={formData.password}
+          onChange={handleChange}
+          required
         />
-        <button
-          className=' mt-4 bg-linear-to-br from-green-600 to-green-700 hover:bg-white text-white hover:text-green-500 font-bold py-2 px-6 m-2 rounded shadow-xl cursor-pointer'
-          onClick={handleSignup}
-          disabled={loading}
+        <input
+          className='p-3 w-[300px] bg-emerald-100 shadow-xl rounded-md'
+          type='text'
+          name='phoneNumber'
+          placeholder='Phone Number'
+          value={formData.phoneNumber}
+          onChange={handleChange}
+        />
+        <select
+          className='p-3 w-[300px] bg-emerald-100 shadow-xl rounded-md text-gray-500'
+          name='gender'
+          value={formData.gender}
+          onChange={handleChange}
+          required
         >
-          {loading ? 'Signing Up...' : 'Sign Up'}
+          <option value=''>Select Gender</option>
+          <option value='Male'>Male</option>
+          <option value='Female'>Female</option>
+          <option value='Other'>Other</option>
+        </select>
+
+        <button
+          type='submit'
+          className='mt-4 bg-gradient-to-br from-green-600 to-green-700 hover:bg-white text-white hover:text-green-500 font-bold py-2 px-6 m-2 rounded shadow-xl cursor-pointer'
+        >
+          Sign up
         </button>
-        {error && <p className='text-red-500'>{error}</p>}
-        {successMessage && <p className='text-green-500'>{successMessage}</p>}
+
+        {message && (
+          <p className='text-red-600 font-medium text-sm'>{message}</p>
+        )}
+
         <div className='askingForSignUp flex mt-3 gap-2'>
           <h3>Already have an account? </h3>
           <Link href='/About' className='text-green-900 underline'>
             Login
           </Link>
         </div>
-        <hr className=' border-green-600/40  min-w-[40vw]' />
-        <Link
-          href='/'
-          className='socialLogin flex gap-5 justify-center items-center bg-white shadow-xl py-2 px-10 rounded-xl'
-        >
-          <Image
-            src='/google.svg'
-            height={30}
-            width={30}
-            alt='google-icon'
-          ></Image>
-          <h1>Login with Google</h1>
-        </Link>
-      </div>
+      </form>
     </div>
   )
 }

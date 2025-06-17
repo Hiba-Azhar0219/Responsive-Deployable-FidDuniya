@@ -2,49 +2,56 @@
 import { signIn, useSession } from 'next-auth/react'
 import Image from 'next/image'
 import Link from 'next/link'
-import { useEffect } from 'react'
 
 const LoginPortion = () => {
-  const { data: session, status } = useSession()
+  const { data: session } = useSession()
 
-  useEffect(() => {
-    if (status === 'authenticated' && session?.user) {
-      console.log(session?.user)
-      const sendUserToBackend = async () => {
-        try {
-          const res = await fetch('http://localhost:3001/users/google', {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-            },
-            credentials: 'include', // <- optional but could be needed
+  const sendUserToBackend = async (user) => {
+    try {
+      const res = await fetch('http://localhost:3001/users/google', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        credentials: 'include',
+        body: JSON.stringify({
+          username: user.name,
+          email: user.email,
+        }),
+      })
 
-            body: JSON.stringify({
-              username: session.user.name,
-              email: session.user.email,
-            }),
-          })
-
-          if (!res.ok) {
-            const errorText = await res.text()
-            throw new Error(`Backend error: ${res.status} - ${errorText}`)
-          }
-
-          const contentType = res.headers.get('content-type')
-          if (contentType && contentType.includes('application/json')) {
-            const data = await res.json()
-            console.log('User saved to backend:', data)
-          } else {
-            console.warn('No JSON returned by backend')
-          }
-        } catch (error) {
-          console.error('Error saving user to backend:', error.message)
-        }
+      if (!res.ok) {
+        const errorText = await res.text()
+        throw new Error(`Backend error: ${res.status} - ${errorText}`)
       }
 
-      sendUserToBackend()
+      const contentType = res.headers.get('content-type')
+      if (contentType && contentType.includes('application/json')) {
+        const data = await res.json()
+        console.log('User saved to backend:', data)
+      } else {
+        console.warn('No JSON returned by backend')
+      }
+    } catch (error) {
+      console.error('Error saving user to backend:', error.message)
     }
-  }, [session, status])
+  }
+
+  const handleGoogleLogin = async () => {
+    const result = await signIn('google', { redirect: false })
+
+    // After Google sign-in is triggered, wait for session to populate
+    setTimeout(async () => {
+      const sessionCheck = await fetch('/api/auth/session')
+      const json = await sessionCheck.json()
+
+      if (json?.user) {
+        console.log('Google user:', json.user)
+        await sendUserToBackend(json.user)
+        window.location.href = '/' // Now redirect manually
+      }
+    }, 1000)
+  }
 
   return (
     <div className='main-login-portion flex justify-center items-center min-h-[100vh]'>
@@ -67,7 +74,7 @@ const LoginPortion = () => {
 
         <hr className='border-green-600/40 min-w-[40vw]' />
         <button
-          onClick={() => signIn('google', { callbackUrl: '/' })}
+          onClick={handleGoogleLogin}
           className='socialLogin flex gap-5 justify-center items-center bg-white shadow-xl py-2 px-10 rounded-xl'
         >
           <Image src='/google.svg' height={30} width={30} alt='google-icon' />
@@ -79,6 +86,7 @@ const LoginPortion = () => {
             Sign Up
           </Link>
         </div>
+        <h3>Update Progress</h3>
       </div>
     </div>
   )

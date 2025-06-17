@@ -1,3 +1,4 @@
+'use client'
 import SignupPortion from '@/components/SignupPortion'
 import React from 'react'
 
