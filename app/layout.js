@@ -1,5 +1,6 @@
 import { Geist, Geist_Mono } from 'next/font/google'
 import './globals.css'
+import LayoutClient from './LayoutClient' // new client wrapper
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 
@@ -24,15 +25,13 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Navbar />
-        <div
-          className='container min-h-[83vh] max-w-[100vw] overflow-hidden
-'
-        >
-          {children}
-        </div>
-
-        <Footer />
+        <LayoutClient>
+          <Navbar />
+          <div className='container min-h-[83vh] max-w-[100vw] overflow-hidden'>
+            {children}
+          </div>
+          <Footer />
+        </LayoutClient>
       </body>
     </html>
   )
