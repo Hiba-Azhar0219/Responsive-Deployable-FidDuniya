@@ -5,7 +5,7 @@ import { useState } from 'react'
 
 const SignupPortion = () => {
   const [formData, setFormData] = useState({
-    username: '',
+    name: '',
     email: '',
     password: '',
     phoneNumber: '',
@@ -42,7 +42,7 @@ const SignupPortion = () => {
 
       setMessage('User created successfully!')
       setFormData({
-        username: '',
+        name: '',
         email: '',
         password: '',
         phoneNumber: '',
@@ -69,9 +69,9 @@ const SignupPortion = () => {
         <input
           className='mt-5 p-3 w-[300px] bg-emerald-100 shadow-xl rounded-md'
           type='text'
-          name='username'
+          name='name'
           placeholder='Full Name'
-          value={formData.username}
+          value={formData.name}
           onChange={handleChange}
           required
         />
