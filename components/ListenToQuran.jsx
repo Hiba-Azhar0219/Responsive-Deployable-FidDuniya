@@ -3,10 +3,10 @@ import Link from 'next/link'
 
 const ListenToQuran = () => {
   return (
-    <div className='flex flex-col gap-6 justify-center items-center w-full px-4 sm:px-6 md:px-20 mt-10'>
+    <div className='flex flex-col gap-8 justify-center items-center w-full px-5 sm:px-5 md:px-5'>
       {/* Quran Quote Section */}
-      <div className='flex flex-col lg:flex-row justify-center items-center gap-6 lg:gap-10 py-8 w-full bg-gradient-to-r from-green-300/10 to-green-300/30 rounded-xl shadow-sm'>
-        <h1 className='text-sm sm:text-base md:text-lg text-green-900 text-center lg:text-left max-w-xl font-medium'>
+      <div className='flex flex-col lg:flex-row gap-20 lg:gap-5 py-20 w-full justify-center items-center bg-gradient-to-r from-green-300/10 to-green-300/30 rounded-xl shadow-sm'>
+        <h1 className='text-xl sm:text-base md:text-lg text-green-900  lg:text-left max-w-xl font-medium min-w-[60vw] justify-around'>
           "This is a blessed Book which We have revealed to you O Prophet so
           that they may contemplate its verses, and people of reason may be
           mindful." — **Sad 38:29**

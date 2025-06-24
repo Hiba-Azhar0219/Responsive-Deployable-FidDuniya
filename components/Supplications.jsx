@@ -5,7 +5,7 @@ import Image from 'next/image'
 const Supplications = () => {
   return (
     <div className='flex flex-col gap-8 justify-center items-center pt-10 px-4 sm:px-8 w-full'>
-      <h1 className='text-2xl sm:text-3xl text-green-900 pb-4 text-shadow-lg text-center'>
+      <h1 className='text-2xl sm:text-3xl text-green-900 pb-7 text-shadow-lg text-center'>
         Supplications
       </h1>
 
@@ -15,12 +15,12 @@ const Supplications = () => {
         <div className='flex flex-col justify-center items-center gap-3 cursor-pointer'>
           <Image
             src='/sleeping.png'
-            height={160}
-            width={160}
+            height={220}
+            width={220}
             alt='sleeping'
             className="rounded-full bg-[url('/supplicationPattern.png')] object-cover"
           />
-          <h1 className='text-green-900 text-sm sm:text-base text-shadow-sm'>
+          <h1 className='text-green-900 text-2xl sm:text-lg text-shadow-lg'>
             Sleep
           </h1>
         </div>
@@ -29,12 +29,12 @@ const Supplications = () => {
         <div className='flex flex-col justify-center items-center gap-3 cursor-pointer'>
           <Image
             src='/dua_excellence.png'
-            height={160}
-            width={160}
+            height={220}
+            width={220}
             alt='excellence'
             className="rounded-full bg-[url('/supplicationPattern.png')] object-cover"
           />
-          <h1 className='text-green-900 text-sm sm:text-base text-shadow-sm'>
+          <h1 className='text-green-900 text-2xl sm:text-lg text-shadow-lg'>
             Excellence
           </h1>
         </div>
@@ -43,12 +43,12 @@ const Supplications = () => {
         <div className='flex flex-col justify-center items-center gap-3 cursor-pointer'>
           <Image
             src='/repentance.png'
-            height={160}
-            width={160}
+            height={220}
+            width={220}
             alt='repentance'
             className="rounded-full bg-[url('/supplicationPattern.png')] object-cover"
           />
-          <h1 className='text-green-900 text-sm sm:text-base text-shadow-sm'>
+          <h1 className='text-green-900 text-2xl sm:text-lg text-shadow-lg'>
             Repentance
           </h1>
         </div>
@@ -57,12 +57,12 @@ const Supplications = () => {
         <div className='flex flex-col justify-center items-center gap-3 cursor-pointer'>
           <Image
             src='/guidance.png'
-            height={160}
-            width={160}
+            height={220}
+            width={220}
             alt='guidance'
             className="rounded-full bg-[url('/supplicationPattern.png')] object-cover"
           />
-          <h1 className='text-green-900 text-sm sm:text-base text-shadow-sm'>
+          <h1 className='text-green-900 text-2xl sm:text-lg text-shadow-lg'>
             Guidance
           </h1>
         </div>

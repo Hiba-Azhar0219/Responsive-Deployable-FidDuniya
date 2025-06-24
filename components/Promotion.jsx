@@ -4,8 +4,8 @@ import Link from 'next/link'
 
 const Promotion = () => {
   return (
-    <div className='flex flex-col justify-center items-center w-full px-4 sm:px-6 py-12 gap-8 bg-white'>
-      <h1 className='text-2xl sm:text-3xl md:text-4xl text-green-900 font-bold text-center text-shadow-lg'>
+    <div className=' flex flex-col justify-center items-center w-full px-4 sm:px-6 py-12 gap-8 bg-white mt-10'>
+      <h1 className='text-2xl sm:text-3xl md:text-4xl text-green-900 font-normal text-center text-shadow-lg'>
         The Mobile Application is finally here
       </h1>
 
@@ -15,7 +15,7 @@ const Promotion = () => {
           <h1 className='text-xl sm:text-2xl text-green-900 font-semibold'>
             Fid-Duniya Wal-Akhirah
           </h1>
-          <p className='text-sm sm:text-base text-green-800 leading-relaxed max-w-2xl'>
+          <p className='text-lg sm:text-lg text-green-800 leading-relaxed max-w-2xl'>
             Stay connected to your faith anytime, anywhere. Our all-in-one
             Fid-Duniya Wal-Akhirah Mobile App offers the Holy Quran, daily duas,
             Salah Tracker (coming soon) and more — all at your fingertips.

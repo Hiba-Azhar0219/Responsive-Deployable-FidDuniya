@@ -8,7 +8,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <nav className='bg-white text-green-900 drop-shadow-md px-6 md:px-10 py-4'>
+    <nav className='bg-white text-green-900 drop-shadow-md px-6 md:px-10 py-2'>
       <div className='flex justify-between items-center h-16'>
         {/* Logo and Title */}
         <div className='flex items-center gap-2'>
@@ -25,7 +25,7 @@ const Navbar = () => {
         </div>
 
         {/* Desktop Menu */}
-        <ul className='hidden md:flex gap-6 lg:gap-10 text-base items-center'>
+        <ul className='hidden md:flex gap-6 lg:gap-10 text-lg font-bomediumld items-center'>
           <Link href='/'>
             <li>Home</li>
           </Link>
