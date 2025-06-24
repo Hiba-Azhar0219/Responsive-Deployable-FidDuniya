@@ -13,7 +13,7 @@ const Supplications = () => {
           {/* sleeping */}
           <Image
             className='bg-[url("/supplicationPattern.png")] rounded-full '
-            src='/sleeping.PNG'
+            src='/sleeping.png'
             height={170}
             width={190}
             alt='sleeping'
@@ -24,7 +24,7 @@ const Supplications = () => {
         <div className='flex flex-col justify-center items-center gap-4 cursor-pointer'>
           <Image
             className='bg-[url("/supplicationPattern.png")] rounded-full '
-            src='/dua_excellence.PNG'
+            src='/dua_excellence.png'
             height={170}
             width={190}
             alt='excellence'
@@ -36,10 +36,10 @@ const Supplications = () => {
           {/* Repentance */}
           <Image
             className='bg-[url("/supplicationPattern.png")] rounded-full '
-            src='/repentance.PNG'
+            src='/repentance.png'
             height={170}
             width={190}
-            alt='repetance'
+            alt='repentance'
           />
           <h1 className='text-green-900 text-lg  text-shadow-sm'>Repentance</h1>
         </div>
@@ -48,7 +48,7 @@ const Supplications = () => {
           {/* guidance */}
           <Image
             className='bg-[url("/supplicationPattern.png")] rounded-full '
-            src='/guidance.PNG'
+            src='/guidance.png'
             height={170}
             width={190}
             alt='guidance'

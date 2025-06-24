@@ -27,7 +27,7 @@ const Promotion = () => {
         </div>
         <Image
           className='rounded-2xl drop-shadow-2xl'
-          src='/mobileStructure.png'
+          src='/mobileStructure.PNG'
           width={200}
           height={200}
           alt='mob screen with structure'
