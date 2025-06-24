@@ -1,13 +1,12 @@
 import SupplicationCategory from '@/components/SupplicationCategory'
 import React from 'react'
 import Image from 'next/image'
-import Link from 'next/link'
 
 const Duas = () => {
   return (
     <div className='mt-10 text-center bg-[url("/mosqueOpacity.png")] bg-cover relative'>
       <div className='lamp absolute'>
-        <Image src='/glow.png' width={100} height={700} alt='lamp'></Image>
+        <Image src='/glow.png' width={100} height={700} alt='lamp' />
       </div>
       <h1 className='text-3xl text-green-900  text-shadow-lg mb-5 '>
         Supplications
