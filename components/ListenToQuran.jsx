@@ -3,15 +3,15 @@ import Link from 'next/link'
 
 const ListenToQuran = () => {
   return (
-    <div className='flex flex-col gap-8 justify-center items-center w-full px-5 sm:px-5 md:px-5'>
+    <div className='flex flex-col gap-8 justify-center items-center w-full px-2 sm:px-2 md:px-2'>
       {/* Quran Quote Section */}
-      <div className='flex flex-col lg:flex-row gap-20 lg:gap-5 py-20 w-full justify-center items-center bg-gradient-to-r from-green-300/10 to-green-300/30 rounded-xl shadow-sm'>
-        <h1 className='text-xl sm:text-base md:text-lg text-green-900  lg:text-left max-w-xl font-medium min-w-[60vw] justify-around'>
+      <div className='flex gap-4 justify-center items-center w-full px-2 sm:px-2 md:px-3 py-20 mt-10 mb-10 bg-gradient-to-r from-green-400/40 to-white text-green-900 text-center rounded-md'>
+        <h1 className='text-base sm:text-lg md:text-xl max-w-3xl leading-relaxed'>
           "This is a blessed Book which We have revealed to you O Prophet so
           that they may contemplate its verses, and people of reason may be
           mindful." — **Sad 38:29**
         </h1>
-        <h1 className='text-lg sm:text-xl text-green-900 text-center lg:text-left max-w-xl font-semibold leading-relaxed'>
+        <h1 className='text-lg sm:text-xl md:text-2xl max-w-3xl leading-relaxed'>
           كِتَٰبٌ أَنزَلۡنَٰهُ إِلَيۡكَ مُبَٰرَكٞ لِّيَدَّبَّرُوٓاْ ءَايَٰتِهِۦ
           وَلِيَتَذَكَّرَ أُوْلُواْ ٱلۡأَلۡبَٰبِ ٢٩
         </h1>
