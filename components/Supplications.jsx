@@ -17,7 +17,7 @@ const Supplications = () => {
             height={170}
             width={190}
             alt='sleeping'
-          ></Image>
+          />
           <h1 className='text-green-900 text-shadow-sm text-lg'>Sleep</h1>
         </div>
         {/* excellence */}
@@ -28,7 +28,7 @@ const Supplications = () => {
             height={170}
             width={190}
             alt='excellence'
-          ></Image>
+          />
           <h1 className='text-green-900 text-lg  text-shadow-sm'>Excellence</h1>
         </div>
 
@@ -40,7 +40,7 @@ const Supplications = () => {
             height={170}
             width={190}
             alt='repetance'
-          ></Image>
+          />
           <h1 className='text-green-900 text-lg  text-shadow-sm'>Repentance</h1>
         </div>
 
@@ -52,7 +52,7 @@ const Supplications = () => {
             height={170}
             width={190}
             alt='guidance'
-          ></Image>
+          />
           <h1 className='text-green-900 text-lg  text-shadow-sm'>Guidance</h1>
         </div>
       </div>

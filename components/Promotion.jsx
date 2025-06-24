@@ -31,7 +31,7 @@ const Promotion = () => {
           width={200}
           height={200}
           alt='mob screen with structure'
-        ></Image>
+        />
       </div>
     </div>
   )
