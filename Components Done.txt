@@ -1,0 +1,12 @@
+Done
+
+Navbar
+Hero Section
+FeaturesOnHeroSection
+MotivationForQuran
+ListenQuran 
+MotivationForDua
+DailySupplications
+Supplications
+Promotion
+Footer
