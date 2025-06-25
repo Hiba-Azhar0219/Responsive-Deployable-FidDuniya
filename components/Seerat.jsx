@@ -3,12 +3,14 @@ import Image from 'next/image'
 
 const Seerat = () => {
   return (
-    <div className='flex flex-col max-w-[70vw] m-auto justify-center mt-10 p-10 bg-linear-to-r from-green-300/10 to-green-300/30 rounded-2xl'>
-      <h1 className=' heading text-2xl text-green-900 text-shadow-lg'>
+    <div className='flex flex-col w-full max-w-6xl mx-auto justify-center mt-10 px-4 sm:px-6 md:px-10 py-10 bg-gradient-to-r from-green-300/10 to-green-300/30 rounded-2xl'>
+      <h1 className='text-xl sm:text-2xl text-green-900 text-shadow-lg mb-6'>
         Seerat
       </h1>
-      <div className='tafseer-info flex justify-between items-center'>
-        <p className='feature-info w-180 text-base text-green-800 text-shadow-green-600'>
+
+      <div className='flex flex-col md:flex-row justify-between items-center gap-6'>
+        {/* Text Section */}
+        <p className='text-sm sm:text-base text-green-800 text-shadow-green-600 leading-relaxed md:w-3/4'>
           The life of the Prophet Muhammad (PBUH) is a timeless source of
           guidance, mercy, and inspiration. Our Seerat section offers a
           beautifully presented journey through his noble life — from his early
@@ -20,13 +22,18 @@ const Seerat = () => {
           this section invites you to connect deeply with the life of the one
           who was sent as a mercy to all worlds.
         </p>
-        <Image
-          id='feature-img'
-          src='/quranic.png'
-          width={190}
-          height={100}
-          alt='tafseer picture'
-        ></Image>
+
+        {/* Image Section */}
+        <div className='flex justify-center md:justify-end w-full md:w-1/4'>
+          <Image
+            id='feature-img'
+            src='/quranic.png'
+            width={190}
+            height={190}
+            alt='seerat picture'
+            className='object-contain'
+          />
+        </div>
       </div>
     </div>
   )

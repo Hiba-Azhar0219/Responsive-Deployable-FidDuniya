@@ -10,3 +10,13 @@ DailySupplications
 Supplications
 Promotion
 Footer
+Seerat
+Tafseer
+Parahs
+Supplication
+SupplicationCard
+Salah tracker
+Planner
+Vision
+Mission
+Contact

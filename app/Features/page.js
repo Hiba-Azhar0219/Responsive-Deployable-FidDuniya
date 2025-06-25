@@ -7,20 +7,31 @@ import React from 'react'
 
 const Features = () => {
   return (
-    <div className='flex flex-col justify-center items-center relative'>
-      <Image
-        className='absolute top-15 left-20'
-        src='/glow.png'
-        height={800}
-        width={100}
-        alt='lamp'
-      ></Image>
-      <h1 className=' text-3xl text-green-900 pb-4 text-shadow-lg'>Features</h1>
-      <div className='bg-[url("/featuresPattern.png")] min-w-[100vw] max-w-[100vw] min-h-[85vh] bg-cover bg-no-repeat '>
-        <Tafseer />
-        <Seerat />
-        <SalahTracker />
-        <Planner />
+    <div className='relative flex flex-col justify-center items-center w-full max-w-[100vw] overflow-x-hidden'>
+      {/* Background Glow Image */}
+      <div className='absolute top-10 left-5 sm:left-10 z-0 opacity-50'>
+        <Image
+          src='/glow.png'
+          height={800}
+          width={100}
+          alt='lamp'
+          className='object-contain'
+        />
+      </div>
+
+      {/* Heading */}
+      <h1 className='text-2xl sm:text-3xl text-green-900 pb-4 text-shadow-lg z-10 text-center px-4'>
+        Features
+      </h1>
+
+      {/* Background with Pattern and Content */}
+      <div className='bg-[url("/featuresPattern.png")] bg-cover bg-no-repeat w-full min-h-screen px-4 sm:px-6 md:px-10 pb-10 z-10'>
+        <div className='flex flex-col gap-10'>
+          <Tafseer />
+          <Seerat />
+          <SalahTracker />
+          <Planner />
+        </div>
       </div>
     </div>
   )
