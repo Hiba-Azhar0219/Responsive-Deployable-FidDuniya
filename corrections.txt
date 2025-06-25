@@ -1,0 +1,23 @@
+
+column flex in mobile Listen to Quran Dua
+SupplicationType and supplications text
+All rights resered in footer in mobile view that it adjusts in one line
+padding in Parahs
+
+in parahs, a guidance me A capial nhi hoga
+couter check name of 3rd parah and 11th 
+12 Wama Min ...coutnerchdcke 
+Qala Alam in 16th 
+21st Uhiya in last
+22nd 
+23th 
+24th Waman Azlamu
+25th needs to be checked 
+Opacity of supplicationCard
+Justify evenly in supplicationcard
+Margins in about
+space between feeatures headling must be even 
+Space between features must be smaller
+
+
+

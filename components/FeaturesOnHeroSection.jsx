@@ -87,7 +87,7 @@ const FeaturesOnHeroSection = () => {
 
       {/* About Button */}
       <Link href='/Features'>
-        <button className='mt-8 px-6 py-2 text-white bg-gradient-to-br from-green-600/60 to-green-700/70 hover:from-green-600 hover:to-green-700 hover:text-white font-semibold rounded shadow-xl transition-all duration-300'>
+        <button className='mt-3 px-6 py-2 text-white bg-gradient-to-br from-green-600/60 to-green-700/70 hover:from-green-600 hover:to-green-700 hover:text-white font-semibold rounded shadow-xl transition-all duration-300'>
           About Features
         </button>
       </Link>

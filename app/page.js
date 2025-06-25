@@ -13,7 +13,7 @@ import './globals.css'
 
 const Home = () => {
   return (
-    <div className='flex flex-col w-full overflow-x-hidden'>
+    <div className='flex flex-col w-full overflow-hidden'>
       <HeroSection />
       <FeaturesOnHeroSection />
       <MotivationForQuran />

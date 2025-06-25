@@ -2,7 +2,7 @@ import React from 'react'
 
 const MotivationForQuran = () => {
   return (
-    <div className='flex flex-col gap-6 my-10 justify-center items-center w-full px-4 sm:px-6 md:px-20 py-10'>
+    <div className='flex flex-col gap-3 mt-10 md:mt-10 lg:mt-30 justify-center items-center w-full px-4 sm:px-6 md:px-20 '>
       <h1 className='text-2xl sm:text-3xl md:text-4xl text-green-900 text-center font-normal text-shadow-lg'>
         Allah Makes Impossible Possible
       </h1>

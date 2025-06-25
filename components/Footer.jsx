@@ -83,7 +83,7 @@ const Footer = () => {
       <hr className='w-full h-0.5 bg-white/60 border-none' />
 
       <div className='py-3 px-4 flex items-center justify-center text-center'>
-        <h3 className='text-lg font-bold'>
+        <h3 className='text-xs sm:text-sm md:text-base lg:text-lg font-bold whitespace-nowrap text-center'>
           © 2025 Fid-Duniya WalAkhirah | All Rights Reserved
         </h3>
       </div>
