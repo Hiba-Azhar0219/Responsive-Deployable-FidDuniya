@@ -9,10 +9,10 @@ const SupplicationCard = ({ category }) => {
         (supplication) => (
           <div
             key={supplication.id}
-            className='card flex flex-col bg-white/60 shadow-gray-400 text-green-900 p-4 h-auto justify-center items-center rounded-lg gap-4 max-w-[80vw]'
+            className='card flex flex-col bg-white/40 shadow-gray-400 text-green-900 p-4 h-auto justify-center items-center rounded-lg gap-4 max-w-[80vw]'
           >
             <h1 className='font-bold text-lg'>{supplication.arabic}</h1>
-            <h2>{supplication.translation}</h2>
+            <h2 classname='text-justify'>{supplication.translation}</h2>
           </div>
         )
       )}

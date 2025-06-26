@@ -17,10 +17,10 @@ const Parahs = () => {
         {`
     const parahNames = [
       "Alif Lam Meem", "Sayaqool", "Tilkal Rusull", "Lan Tana Loo", "Wal Mohsanat",
-      "La Yuhibbullah", "Wa Iza Samiu", "Wa Lau Annana", "Qad Aflaha", "Wa A'lamu",
-      "Ya Ayyuha Allazina Amanu", "Wa Mamin Da'abat", "Wa Ma Ubrioo", "Rubama", "Subhanallazi",
-      "Qal Alam", "Aqtarabat", "Qadd Aflaha", "Wa Qalallazina", "A'man Khalaq",
-      "Utlu Ma Oohi", "Wa Manyaqnut", "Wa Masha Allah", "Faman Azlam", "Elahe Yuruddu",
+      "La Yuhibbullah", "Wa Iza Samiu", "Wa Lau Annana", "Qalal Malao", "Wa A'lamu",
+      "Yatazeroon", "Wa Mamin Da'abat", "Wa Ma Ubrioo", "Rubama", "Subhanallazi",
+      "Qala Alam", "Aqtarabat", "Qadd Aflaha", "Wa Qalallazina", "A'man Khalaq",
+      "Utlu Ma Oohi", "Wa Manyaqnut", "Wa Mali", "Faman Azlam", "Elahe Yuruddu",
       "Ha'a Meem", "Qala Fama Khatbukum", "Qadd Sami Allah", "Tabarakallazi", "Amma Yatasa'aloon"
     ];
 
@@ -37,7 +37,7 @@ const Parahs = () => {
 
     const arabicParahNames = [
       "الٓمّٓ", "سَيَقُولُ", "تِلْكَ ٱلرُّسُلُ", "لَنْ تَنَالُوا", "وَٱلْمُحْصَنَاتُ",
-      "لَا يُحِبُّ ٱللَّهُ", "وَإِذَا سَمِعُوا", "وَلَوْ أَنَّنَا", "قَدْ أَفْلَحَ", "وَٱعْلَمُوا",
+      "لَا يُحِبُّ ٱللَّهُ", "وَإِذَا سَمِعُوا", "وَلَوْ أَنَّنَا", "قَالَ الْمَلَ", "وَٱعْلَمُوا",
       "يَعْتَذِرُونَ", "وَمَا مِن دَابَّةٍ", "وَمَا أُبَرِّئُ", "رُبَمَا", "سُبْحَانَ ٱلَّذِى",
       "قَالَ أَلَمْ", "ٱقْتَرَبَتِ", "قَدْ أَفْلَحَ", "وَقَالَ ٱلَّذِينَ", "أَمَّنْ خَلَقَ",
       "ٱتْلُ مَا أُوحِىَ", "وَمَنْ يَّقْنُتْ", "وَمَا لِىَ", "فَمَنْ أَظْلَمُ", "إِلَيْهِ يُرَدُّ",
